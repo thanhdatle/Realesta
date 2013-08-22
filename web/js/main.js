@@ -7,22 +7,21 @@
  */
 $(document).ready(function() {
     $("#searchButton").click( function(e){
-        alert('search button is clicked');
-
         var location = $('#txtLocation').val();
         location = location.replace(" ","+");
-        var long = 0;
-        var lat = 0;
+        var long = '';
+        var lat = '';
         $.ajax({ url:'http://maps.googleapis.com/maps/api/geocode/json?address='+location+'&sensor=true',
             success: function(data){
-//                        alert(data.results[0].geometry.location.lat);
-                long = data.results[0].geometry.location.long;
                 lat = data.results[0].geometry.location.lat;
+                long = data.results[0].geometry.location.lng;
+                map.setView([lat, long], 5);
+                e.preventDefault();
             }
         });
 
-        map.setView([lat, long], 5);
-        e.preventDefault();
+
+
     });
     $("#txtLocation").on("input", function(e) {
         var location = $(this).val();
