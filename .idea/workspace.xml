@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e27d88f-bc47-4d6c-99e5-3753ab61da74" name="Default" comment="Database, signin, signup are up and running" />
+    <ignored path="Scantasy.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377176924618" ignored="false" />
+    <file path="/a.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373443629598" ignored="false" />
+    <file path="/UserServices.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370858221563" ignored="false" />
+    <file path="/User.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370857989197" ignored="false" />
+    <file path="/Profile.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513546329" ignored="false" />
+    <file path="/Services.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370849747250" ignored="false" />
+    <file path="/a.dummy" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373514065612" ignored="false" />
+    <file path="/HomeController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513520208" ignored="false" />
+    <file path="/routing.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1376922849214" ignored="false" />
+    <file path="/index.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371634800795" ignored="false" />
+    <file path="/signin.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371088792053" ignored="false" />
+    <file path="/home.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372321548966" ignored="false" />
+    <file path="/signup.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370917924528" ignored="false" />
+    <file path="/UserType.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370856253298" ignored="false" />
+    <file path="/Registration.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370858557424" ignored="false" />
+    <file path="/RegistrationType.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370855651936" ignored="false" />
+    <file path="/UserStatus.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372301193235" ignored="false" />
+    <file path="/UserRepository.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373507533094" ignored="false" />
+    <file path="/config.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513484656" ignored="false" />
+    <file path="/security.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513493156" ignored="false" />
+    <file path="/welcome.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371459968638" ignored="false" />
+    <file path="/UserAcc.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371028716672" ignored="false" />
+    <file path="/config_dev.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371194664593" ignored="false" />
+    <file path="/email.txt.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371087936365" ignored="false" />
+    <file path="/composer.json" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373418831732" ignored="false" />
+    <file path="/AppKernel.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373509377050" ignored="false" />
+    <file path="/RegistrationController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372320347005" ignored="false" />
+    <file path="/login.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371092755221" ignored="false" />
+    <file path="/FacebookProvider.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371114722094" ignored="false" />
+    <file path="/layout.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371453603151" ignored="false" />
+    <file path="/show.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371542823857" ignored="false" />
+    <file path="/ServiceRegisterController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372321744893" ignored="false" />
+    <file path="$PROJECT_DIR$/../Integration/Symfony/src/Lms/LmsBundle/Resources/views/An/index.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371634801809" ignored="false" />
+    <file path="/RssFeedCommand.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513505876" ignored="false" />
+    <file path="/PricingController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373428686084" ignored="false" />
+    <file path="/pricing.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373251359837" ignored="false" />
+    <file path="/Stripe.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373008778875" ignored="false" />
+    <file path="/Object.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373268681903" ignored="false" />
+    <file path="/Charge.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373008843352" ignored="false" />
+    <file path="/Set.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373009034129" ignored="false" />
+    <file path="/ApiResource.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373008987269" ignored="false" />
+    <file path="/autoload_namespaces.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373419601464" ignored="false" />
+    <file path="/fragment.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373269009767" ignored="false" />
+    <file path="/CardError.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372992492970" ignored="false" />
+    <file path="/ApiRequestor.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373009065057" ignored="false" />
+    <file path="/Data Source" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373266987590" ignored="false" />
+    <file path="/readme.md" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373441159448" ignored="false" />
+    <file path="$PROJECT_DIR$/../Scantasy/src/Scantasy/ScanBundle/Controller/PricingController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373443867567" ignored="false" />
+    <file path="/ScanBundle.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373511926771" ignored="false" />
+    <file path="/ScantasyORMDesigner.module.xml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513443748" ignored="false" />
+    <file path="/MapBoxController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1376923014032" ignored="false" />
+    <file path="/mapboxhome.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377074036488" ignored="false" />
+    <file path="/main.css" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377074179911" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="C:\working\Scantasy" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Scantasy" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="26" selection-start="0" selection-end="2411" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapBoxController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/MapBoxController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="1" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="0" selection-start="2437" selection-end="2437" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="59" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapboxhome.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.029565217">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Entity/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/Model/Registration.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/Type/RegistrationType.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/signup.html.twig" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Entity/Profile.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/signin.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/MapBoxController.php" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="localhost" name="localhost" port="8000" />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Php 5.4.4" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1243" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Database.TableEditor.Splitter" value="0.9" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="Configurable.PHP" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
+  <component name="PublishConfig" autoUpload="true" uploadOnSaveAll="true">
+    <servers>
+      <server id="a519a94e-b037-4bdb-beda-a7819022fd67">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\working\MapBox\web\css" />
+      <recent name="C:\working\MapBox\web\js" />
+      <recent name="C:\working\Scantasy\vendor\stripe\stripe-php\lib\Stripe" />
+      <recent name="C:\working\Scantasy\web\js" />
+      <recent name="C:\working\Scantasy\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\working\Scantasy\vendor\stripe\stripe-php\lib\Stripe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Web Application.localhost">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="FIREFOX" server_name="localhost">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.localhost" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\MONKEY D.LUFFY\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e27d88f-bc47-4d6c-99e5-3753ab61da74" name="Default" comment="" />
+      <created>1370830081192</created>
+      <updated>1370830081192</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Database, signin, signup are up and running">
+      <created>1370922304442</created>
+      <updated>1370922304442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Notify system, service registration are working">
+      <created>1371779311302</created>
+      <updated>1371779311302</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1243" height="784" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20660277" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05263158" sideWeight="0.9252438" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24910608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40220153" sideWeight="0.9601276" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07042254" sideWeight="0.9970443" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09859155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44312027" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32286024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1002" y="100" width="701" height="880" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07475623" sideWeight="0.9587786" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10509209" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notify system, service registration are working" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Database, signin, signup are up and running" />
+    <MESSAGE value="Email system" />
+    <MESSAGE value="Notify system, service registration are working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="28" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/signup.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="544" selection-end="544" vertical-scroll-proportion="-10.461538" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Entity/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="5" selection-start="3015" selection-end="3015" vertical-scroll-proportion="-29.538462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scantazy.ormdesigner2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="49" selection-start="63" selection-end="71" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="33" selection-start="2716" selection-end="2716" vertical-scroll-proportion="-5.3461537" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/signin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="33" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-5.3461537" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="13" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-8.307693" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="5" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.47826087" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="26" selection-start="0" selection-end="2411" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cache/dev/assetic/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2437" selection-end="2437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/MapBoxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.mobile-1.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="59" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.029565217">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

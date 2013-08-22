@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1096480434">
+    <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.2.4" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC3g (build 1002)" uuid="7062cf72-a59a-4873-a6d1-1b424d35bec2">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://horton.elephantsql.com:5432/mrmnwzje</jdbc-url>
+      <user-name>mrmnwzje</user-name>
+      <user-password>dfc6df9ddf92dfeddfc2dffadf92dfebdf9fdfcbdfe4df9bdfffdfdadfdadf9adfc3dfe9dfc3dfdfdf9ddf9cdff5dfe7dff3dfe7dfdedff2dfc7dfeddf9edf93</user-password>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../postgresql-9.2-1002.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
