@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<orm-designer version="2.1.12.719" name="Scantazy" mvc="Symfony2" orm="Doctrine2" uuid="9eb8447b-1fb7-4836-b513-2d954cc0d0db">
+  <external-module storage-path="ScantasyORMDesigner.module.xml"/>
+  <visual-data>
+    <entity uuid="1018b20d-beae-49fc-a1de-1df16e8440c7" position-x="91" position-y="127" size-x="0" size-x2="119" size-y="0" size-y2="73"/>
+    <entity uuid="17f6bd44-e4f7-43d6-9772-7f1cc1051278" position-x="3" position-y="355" size-x="0" size-x2="123" size-y="0" size-y2="59"/>
+    <module uuid="35aa2aa0-17b5-458d-ac04-88afbd3bc284" bk-color="4294375930" position-x="61" position-y="72" size-x="11" size-x2="748" size-y="22" size-y2="669"/>
+    <project uuid="9eb8447b-1fb7-4836-b513-2d954cc0d0db" size-x="0" size-x2="838" size-y="0" size-y2="785"/>
+    <entity uuid="ac5cd483-641a-44b2-9fb2-215ccdd99972" position-x="287" position-y="160" size-x="0" size-x2="123" size-y="0" size-y2="59"/>
+    <association uuid="b6a3e435-8a96-48de-98e8-f0e19a935828" caption1-position-x="31" caption1-position-y="2" center-position-x="0" center-position-y="0"/>
+    <entity uuid="cb8cdcf6-6df3-4726-beb5-c813d93e35c4" position-x="7" position-y="241" size-x="0" size-x2="108" size-y="0" size-y2="59"/>
+    <entity uuid="d551a43f-b1fb-4be0-973b-b35c8fc0c8e9" position-x="279" position-y="0" size-x="0" size-x2="141" size-y="0" size-y2="87"/>
+    <entity uuid="fdc55c8e-3196-4474-85bf-4514f88f650a" position-x="-4" position-y="-7" size-x="0" size-x2="123" size-y="0" size-y2="87"/>
+  </visual-data>
+</orm-designer>

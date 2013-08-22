@@ -1,0 +1,148 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+
+framework:
+    #esi:             ~
+    #translator:      { fallback: %locale% }
+    secret:          %secret%
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_proxies: ~
+    session:         ~
+    fragments:       ~
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    bundles:        [ ]
+    #java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        #closure:
+        #    jar: %kernel.root_dir%/Resources/java/compiler.jar
+        #yui_css:
+        #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        host:     %database_host%
+        port:     %database_port%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver, add the path in parameters.yml
+        # e.g. database_path: %kernel.root_dir%/data/data.db3
+        # path:     %database_path%
+
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        auto_mapping: true
+
+# Swiftmailer Configuration
+#swiftmailer:
+#    transport: %mailer_transport%
+#    host:      %mailer_host%
+#    username:  %mailer_user%
+#    password:  %mailer_password%
+#    spool:     { type: memory }
+swiftmailer:
+    encryption:       ssl
+    auth_mode:        login
+    host:             smtp.gmail.com
+    #delivery_address: test.email.sloth@gmail.com
+    transport:        gmail
+    username:         test.email.sloth@gmail.com
+    password:         "wearehandsome"
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Drivrrr\ScanBundle\Entity\UserAcc
+    use_listener:           true
+#        use_username_form_type: true
+    model_manager_name:     null  # change it to the name of your entity/document manager if you don't want to use the default one.
+    from_email:
+        address:        test.email.sloth@gmail.com
+        sender_name:    Admin
+    registration:
+        confirmation:
+            #from_email: # Use this node only if you don't want the global email address for the confirmation email
+            #    address:     test.email.sloth@gmail.com
+            #    sender_name: Scantasy Dev Team
+            enabled:    true # change to true for required email confirmation
+            template:   FOSUserBundle:Registration:email.txt.twig
+        form:
+            type:               fos_user_registration
+            name:               fos_user_registration_form
+            validation_groups:  [Registration, Default]
+    service:
+        mailer:                 fos_user.mailer.default
+        email_canonicalizer:    fos_user.util.canonicalizer.default
+        username_canonicalizer: fos_user.util.canonicalizer.default
+        token_generator:        fos_user.util.token_generator.default
+        user_manager:           fos_user.user_manager.default
+    template:
+        engine: twig
+
+fos_facebook:
+    alias:  ScantasyDat
+    app_id: 477116279031840
+    secret: 8a6b42ff223841f5e2dc7712ffb94b21
+#    alias:  ScantasyDev
+#    app_id: 347365422055677
+#    secret: 0dd3fa614a24823f340d4bee8437f9bf
+    cookie: true
+    permissions: [email, user_birthday, user_location]
+
+orderly_pay_pal_ipn:
+
+    # If set to false then service loads settings with "sandbox_" prefix
+    islive:  false
+
+    # Constants for the live environment (default settings in Configuration.php)
+    email:   test.email.sloth@gmail.com
+    url:     https://www.paypal.com/cgi-bin/webscr
+    debug:   %kernel.debug%
+
+    # Constants for the sandbox environment (default settings in Configuration.php)
+    sandbox_email:   test.email.sloth-facilitator@gmail.com
+    sandbox_url:     https://www.sandbox.paypal.com/cgi-bin/webscr
+    sandbox_debug:   true
+
+    drivers: # Define one driver only.
+        orm:
+            object_manager: doctrine.orm.entity_manager
+            classes:
+                ipn_log: Orderly\PayPalIpnBundle\Entity\IpnLog
+                ipn_order_items: Orderly\PayPalIpnBundle\Entity\IpnOrderItems
+                ipn_orders: Orderly\PayPalIpnBundle\Entity\IpnOrders
+
+
+services:
+    my.facebook.user:
+        class: Drivrrr\ScanBundle\Security\User\Provider\FacebookProvider
+        arguments:
+            facebook: "@fos_facebook.api"
+            userManager: "@fos_user.user_manager"
+            validator: "@validator"
+            container: "@service_container"
+
+

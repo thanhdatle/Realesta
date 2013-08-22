@@ -1,0 +1,44 @@
+imports:
+    - { resource: config.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: debug
+        firephp:
+            type:  firephp
+            level: info
+        chromephp:
+            type:  chromephp
+            level: info
+
+assetic:
+    use_controller: true
+
+swiftmailer:
+    encryption:       ssl
+    auth_mode:        login
+    host:             smtp.gmail.com
+    #delivery_address: test.email.sloth@gmail.com
+    transport:        gmail
+    username:         test.email.sloth@gmail.com
+    password:         "wearehandsome"
+
+security:
+    firewalls:
+        public:
+            fos_facebook:
+                app_url: "http://www.facebook.com/apps/application.php?id=347365422055677"
+                server_url: "http://localhost:8000/app_dev.php"

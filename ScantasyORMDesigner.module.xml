@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<orm-designer version="2.1.12.719">
+  <module name="MainModule" import-format="Doctrine2Php" import-path="src/Drivrrr/ScanBundle/Entities" uuid="35aa2aa0-17b5-458d-ac04-88afbd3bc284">
+    <entity name="User" uuid="1018b20d-beae-49fc-a1de-1df16e8440c7">
+      <field name="id" type="integer" size="10" required="true" primary="true" auto-increment="true" uuid="b5ea13a2-d1db-40bc-bef6-4209cb398804"/>
+      <field name="username" type="string" size="255" required="true" unique="true" uuid="131326b1-7da4-4f54-97e9-25553f09d869"/>
+      <field name="password" type="string" size="255" required="true" unique="true" uuid="27498611-a59d-49d5-8c5d-ae38495f8b1b"/>
+      <field name="email" type="string" size="255" required="true" unique="true" uuid="9db2cc59-fbcb-404b-88f9-4cd0d1a033cc"/>
+    </entity>
+    <entity name="Profile" uuid="fdc55c8e-3196-4474-85bf-4514f88f650a">
+      <field name="first_name" type="string" size="50" required="true" uuid="20cbefe8-8056-4b21-9fd2-888fc8dc0b55"/>
+      <field name="last_name" type="string" size="50" required="true" uuid="7e19358d-740e-430a-8926-06af85778d6b"/>
+      <field name="user_id" type="integer" size="15" required="true" unique="true" primary="true" uuid="62170e43-6132-43f5-bd9d-6bfdfe849673"/>
+      <field name="gender" type="string" size="1" enum-values="Male, Female, Unknown" uuid="f825363f-49ce-4a69-877f-58ec7ddb4152"/>
+      <field name="address" type="string" size="255" required="true" uuid="68222263-77bd-4049-8ad0-02d283313be5"/>
+    </entity>
+    <association from="Profile" to="User" caption="1 to 1" owner-alias="Profile" inverse-alias="User" uuid="44911719-8612-4590-a921-ad6239044978">
+      <association-field from="user_id" to="id"/>
+    </association>
+    <entity name="UserServices" uuid="d551a43f-b1fb-4be0-973b-b35c8fc0c8e9">
+      <field name="id" type="integer" size="15" required="true" primary="true" auto-increment="true" uuid="6b27e0c4-9a9a-4ab9-abfe-6f9d76adc71c"/>
+      <field name="user_id" type="integer" size="10" required="true" uuid="bb28b113-b464-4133-adee-84c613b66d43"/>
+      <field name="service_email" type="integer" size="100" required="true" uuid="b9773b09-77d0-47a2-b6a2-816df69a857b"/>
+      <field name="folder" type="string" size="255" required="true" uuid="05b95579-595b-4bba-abc4-25df7899372f"/>
+      <field name="services_id" type="integer" size="15" required="true" unique="true" uuid="484a4e89-3d5c-4e73-b041-947e322e20ba"/>
+    </entity>
+    <association from="UserServices" to="User" caption="userServices(1 to many)" owner-alias="userServices" inverse-alias="User" uuid="b6a3e435-8a96-48de-98e8-f0e19a935828">
+      <association-field from="user_id" to="id"/>
+    </association>
+    <association from="UserServices" to="Services" caption="1 to 1" owner-alias="Serviceses" inverse-alias="userServices" uuid="26fd708b-3cc9-4d1b-926d-5db28d31e747">
+      <association-field from="services_id" to="id"/>
+    </association>
+    <entity name="Services" uuid="ac5cd483-641a-44b2-9fb2-215ccdd99972">
+      <field name="id" type="integer" size="15" required="true" primary="true" auto-increment="true" uuid="98d37158-1023-4469-bc4d-2b1df21ad453"/>
+      <field name="name" type="string" size="20" required="true" uuid="95bf46a7-52e7-4fdb-9d3b-ab9fd1d8dd73"/>
+      <field name="description" type="string" size="255" uuid="4d6db0b9-db30-4111-85d0-99cf5197b064"/>
+    </entity>
+    <entity name="UserStatus" uuid="cb8cdcf6-6df3-4726-beb5-c813d93e35c4">
+      <field name="id" type="integer" size="15" required="true" primary="true" uuid="70a8b370-ecfa-46fa-ac1c-c7658cacf474"/>
+      <field name="value" type="integer" size="1" enum-values="0,1" required="true" uuid="f8b90d27-64d4-4033-bbf7-8d78bb0c8dfd"/>
+      <field name="user_id" type="integer" size="10" required="true" unique="true" uuid="1c994c4b-4e3c-4f92-9b56-b82990221b83"/>
+    </entity>
+    <association from="UserStatus" to="User" caption="1 to 1" owner-alias="UserStatuses" inverse-alias="User" uuid="fc61bb16-9850-4328-8fb9-49618fb9b55d">
+      <association-field from="user_id" to="id"/>
+    </association>
+    <entity name="Status" uuid="17f6bd44-e4f7-43d6-9772-7f1cc1051278">
+      <field name="id" type="integer" size="15" required="true" primary="true" auto-increment="true" uuid="efc41add-a3e3-49ca-b1ec-7b0e149a1bbb"/>
+      <field name="name" type="string" size="50" required="true" uuid="ed78c5a3-2b90-45a3-bf11-2162e24271d9"/>
+      <field name="description" type="string" size="255" required="true" uuid="b8a7752f-25bc-4f7c-bdfa-fa7f9c5a84a0"/>
+      <field name="user_status_id" type="integer" size="15" required="true" uuid="8b43a671-48a9-43f9-a5c5-a4a0bad43493"/>
+    </entity>
+    <association from="Status" to="UserStatus" caption="1 to many" owner-alias="Statuses" inverse-alias="UserStatus" uuid="61044a95-c84c-42be-9373-fc1fdb8a8dcd">
+      <association-field from="user_status_id" to="id"/>
+    </association>
+  </module>
+  <visual-data>
+    <entity uuid="1018b20d-beae-49fc-a1de-1df16e8440c7" position-x="91" position-y="127" size-x="0" size-x2="119" size-y="0" size-y2="73"/>
+    <entity uuid="17f6bd44-e4f7-43d6-9772-7f1cc1051278" position-x="3" position-y="355" size-x="0" size-x2="123" size-y="0" size-y2="59"/>
+    <module uuid="35aa2aa0-17b5-458d-ac04-88afbd3bc284" bk-color="4294375930" position-x="61" position-y="72" size-x="11" size-x2="748" size-y="22" size-y2="669"/>
+    <entity uuid="ac5cd483-641a-44b2-9fb2-215ccdd99972" position-x="287" position-y="160" size-x="0" size-x2="123" size-y="0" size-y2="59"/>
+    <entity uuid="cb8cdcf6-6df3-4726-beb5-c813d93e35c4" position-x="7" position-y="241" size-x="0" size-x2="108" size-y="0" size-y2="59"/>
+    <entity uuid="d551a43f-b1fb-4be0-973b-b35c8fc0c8e9" position-x="279" position-y="0" size-x="0" size-x2="141" size-y="0" size-y2="87"/>
+    <entity uuid="fdc55c8e-3196-4474-85bf-4514f88f650a" position-x="-4" position-y="-7" size-x="0" size-x2="123" size-y="0" size-y2="87"/>
+  </visual-data>
+</orm-designer>

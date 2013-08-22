@@ -1,0 +1,61 @@
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+        Drivrrr\ScanBundle\Entity\UserAcc: plaintext
+        FOS\UserBundle\Model\UserInterface: sha512
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    providers:
+        chain_provider:
+            chain:
+                providers: [fos_userbundle,my_fos_facebook_provider ]
+        fos_userbundle:
+            id: fos_user.user_provider.username
+        my_fos_facebook_provider:
+            id: my.facebook.user
+        in_memory:
+            memory:
+                users:
+                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+
+    firewalls:
+        public:
+            pattern:   ^/
+            fos_facebook:
+
+                app_url: "http://apps.facebook.com/ScantasyDat/"
+                server_url: "http://localhost:8000/"
+#                app_url: "http://apps.facebook.com/ScantasyDev/"
+#                server_url: "http://dev.scantasy.cloudcontrolled.com/"
+                login_path: fos_user_security_login
+                check_path: fos_facebook_security_check
+                default_target_path: scan_home
+                provider: my_fos_facebook_provider
+            form_login:
+                login_path: fos_user_security_login
+                check_path: fos_user_security_check
+                default_target_path: scan_home
+                provider: fos_userbundle
+            anonymous: true
+            logout:
+                delete_cookies:
+                    fbs_477116279031840: { path: "/", domain: "http://localhost:8000/" }
+#                    fbs_347365422055677: { path: "/", domain: "http://dev.scantasy.cloudcontrolled.com" }
+                path: fos_user_security_logout
+                target: scan_welcome
+
+    access_control:
+#        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/logout, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/, roles: ROLE_USER }
+#        - { path: scan_welcome, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/secured/.*, role: [IS_AUTHENTICATED_FULLY] } # This is the route secured with fos_facebook
+
+
+#        - { path: ^/.*, role: [IS_AUTHENTICATED_ANONYMOUSLY] }  #for facebook but not needed

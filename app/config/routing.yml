@@ -1,0 +1,4 @@
+scan:
+    resource: "@ScanBundle/Resources/config/routing.yml"
+    prefix:   /
+

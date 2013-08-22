@@ -1,0 +1,50 @@
+#suggestions{
+    z-index: 1 !important;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 0 !important;
+}
+
+#header {
+    display: none;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.nopadding {
+    padding: 0!important;
+}
+
+.controlbar {
+    margin-bottom: 0px;
+}
+
+.navbarcustom {
+    min-height: 100px;
+}
+
+.searchbox {
+    min-height: 40px !important;
+}
+
+.searchboxicon {
+    height: 30px !important;
+    width: 30px !important
+}

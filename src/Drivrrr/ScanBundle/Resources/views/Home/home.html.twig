@@ -1,0 +1,70 @@
+{% extends "ScanBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style type="text/css">
+        body {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+            /* Custom container */
+        .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+
+            /* Main marketing message and sign up button */
+        .jumbotron {
+            margin: 60px 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 72px;
+            line-height: 1;
+        }
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+            /* Supporting marketing content */
+        .marketing {
+            margin: 60px 0;
+        }
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+    </style>
+{% endblock %}
+
+{% block pagecontent %}
+    {{ facebook_initialize({'xfbml': true, 'fbAsyncInit': 'onFbInit();' , 'status' : true }) }}
+    <div class="hero-unit">
+        <h1>Welcome to Drivrrr</h1>
+        <p>Drivrrr Desciption to be put here</p>
+        <p><a class="btn btn-primary btn-large">Explore our services &raquo;</a></p>
+    </div><!-- .hero-unit -->
+
+    <div class="row">
+        <div class="span4">
+            <h2>DropBox</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div><!-- .span4 -->
+
+        <div class="span4">
+            <h2>GDrive</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div><!-- .span4 -->
+
+        <div class="span4">
+            <h2>Sky Drive</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div><!-- .span4 -->
+
+    </div><!-- .row -->
+ </div><!-- .container -->
+{% endblock %}

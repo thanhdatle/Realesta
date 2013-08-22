@@ -1,0 +1,63 @@
+mapbox_home:
+    pattern:  /mapboxhome
+    defaults: { _controller: ScanBundle:MapBox:mapboxHome }
+
+scan_welcome:
+    pattern:  /
+    defaults: { _controller: ScanBundle:Home:welcome }
+
+scan_home:
+    pattern:  /home
+    defaults: { _controller: ScanBundle:Home:home }
+
+send_email:
+    pattern: /sendemail
+    defaults: { _controller: ScanBundle:Home:sendemail }
+
+pricing:
+    pattern: /pricing
+    defaults: { _controller: ScanBundle:Pricing:pricing }
+
+pricingHandle:
+    pattern: /pricing/handle
+    defaults: { _controller: ScanBundle:Pricing:pricingHandle }
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fosuser_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+fos_facebook_security_check:
+    pattern: /secured/login_check
+
+_security_logout:
+    pattern: /logout
+
+register_email_to_service:
+    pattern: /emailsubmit
+    defaults: { _controller: ScanBundle:ServiceRegister:registerEmail }
+    requirements:
+            _method:  POST
+#This is to aid the paypal, the web will listen for paypal IPN but not send notifications
+OrderlyPayPalIpnBundleNoEmail:
+    resource: "@OrderlyPayPalIpnBundle/Controller/NoNotificationController.php"
+    type:     annotation
+    prefix:   /ipn/
+
+Scantasy_paypal:
+    pattern: /paypal
+    defaults: { _controller: ScanBundle:Pricing:paypal}
