@@ -15,7 +15,7 @@ $(document).ready(function() {
             success: function(data){
                 lat = data.results[0].geometry.location.lat;
                 long = data.results[0].geometry.location.lng;
-                map.setView([lat, long], 5);
+                map.setView([lat, long], 15);
                 e.preventDefault();
             }
         });
@@ -75,7 +75,7 @@ function suggest(address) {
             // Bind click event to each location result
             $("#suggestions li a").bind("click", function() {
                 var address = $(this).html();
-                $('.results')[0].innerHTML = '';
+                //$('.results')[0].innerHTML = '';
 
                 if( address.indexOf('Get current location...') >= 0 ) {
                     getCurrentLocation();
@@ -84,31 +84,31 @@ function suggest(address) {
                     $('#txtLocation').val(address);
 
                     // Get number of results
-                    $.ajax({
-                        url: "/home/search",
-                        type: "POST",
-                        data: { 'address': address },
-                        success: function(msg) {
-                            var data = $.parseJSON(msg);
-                            var curr_group = 0;
-                            var time = 100;
-                            $('.results')[0].innerHTML = "";
-
-                            // Iterate response result
-                            $.each(data, function(key, vals) {
-                                if( curr_group != vals.group_id ) {
-                                    $('.results').append('<div class="group group' + vals.group_id + '"></div>');
-                                    curr_group = vals.group_id;
-                                }
-                                setTimeout(function() { addGirl(vals.group_id, vals) }, time);
-                                time += 150;
-                            });
-                        }
-                    });
+//                    $.ajax({
+//                        url: "/home/search",
+//                        type: "POST",
+//                        data: { 'address': address },
+//                        success: function(msg) {
+//                            var data = $.parseJSON(msg);
+//                            var curr_group = 0;
+//                            var time = 100;
+//                            $('.results')[0].innerHTML = "";
+//
+//                            // Iterate response result
+//                            $.each(data, function(key, vals) {
+//                                if( curr_group != vals.group_id ) {
+//                                    $('.results').append('<div class="group group' + vals.group_id + '"></div>');
+//                                    curr_group = vals.group_id;
+//                                }
+//                                setTimeout(function() { addGirl(vals.group_id, vals) }, time);
+//                                time += 150;
+//                            });
+//                        }
+//                    });
                     $('.listview').hide();
-                    animateResult();
+//                    animateResult();
                 }
-                showFilterOption(false);
+//                showFilterOption(false);
             });
         }
     });
