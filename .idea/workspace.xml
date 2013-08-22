@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e27d88f-bc47-4d6c-99e5-3753ab61da74" name="Default" comment="Database, signin, signup are up and running" />
+    <list default="true" id="6e27d88f-bc47-4d6c-99e5-3753ab61da74" name="Default" comment="Database, signin, signup are up and running">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fb/8b/ba179b07e869a8b5b9fa1e8beb2b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fb/8b/ba179b07e869a8b5b9fa1e8beb2b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig" afterPath="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/sessions/sess_tsgbv695sqhkpbfhffvnh4tui7" afterPath="$PROJECT_DIR$/app/cache/dev/sessions/sess_tsgbv695sqhkpbfhffvnh4tui7" />
+    </list>
     <ignored path="Scantasy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377176924618" ignored="false" />
@@ -12,7 +19,7 @@
     <file path="/Services.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1370849747250" ignored="false" />
     <file path="/a.dummy" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373514065612" ignored="false" />
     <file path="/HomeController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513520208" ignored="false" />
-    <file path="/routing.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1376922849214" ignored="false" />
+    <file path="/routing.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377178374592" ignored="false" />
     <file path="/index.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371634800795" ignored="false" />
     <file path="/signin.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1371088792053" ignored="false" />
     <file path="/home.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1372321548966" ignored="false" />
@@ -55,8 +62,11 @@
     <file path="/ScanBundle.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373511926771" ignored="false" />
     <file path="/ScantasyORMDesigner.module.xml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1373513443748" ignored="false" />
     <file path="/MapBoxController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1376923014032" ignored="false" />
-    <file path="/mapboxhome.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377074036488" ignored="false" />
+    <file path="/mapboxhome.html.twig" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377180654663" ignored="false" />
     <file path="/main.css" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377074179911" ignored="false" />
+    <file path="$PROJECT_DIR$/../MapBoxNew/src/Realesta/RealestaBundle/Controller/DefaultController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377178316489" ignored="false" />
+    <file path="/DefaultController.php" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377178300021" ignored="false" />
+    <file path="$PROJECT_DIR$/../MapBoxNew/src/Acme/DemoBundle/Resources/config/routing.yml" changelist="6e27d88f-bc47-4d6c-99e5-3753ab61da74" time="1377179125683" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,16 +94,7 @@
       <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="26" selection-start="0" selection-end="2411" vertical-scroll-proportion="0.0">
+            <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -120,7 +121,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="1" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,7 +130,7 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="59" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,7 +139,25 @@
       <file leaf-file-name="mapboxhome.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.029565217">
+            <state line="25" column="40" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.6857671">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="1" selection-start="5308" selection-end="5308" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile-1.3.1.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/jquery.mobile-1.3.1.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/Model/Registration.php" />
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Form/Type/RegistrationType.php" />
@@ -177,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/MapBoxController.php" />
+        <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig" />
       </list>
@@ -224,7 +243,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -235,7 +254,205 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScanBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScanBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScanBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drivrrr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScanBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Database.TableEditor.Splitter" value="0.9" />
@@ -358,7 +575,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1243" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1243" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20660277" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -366,7 +583,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05263158" sideWeight="0.9252438" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24910608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40220153" sideWeight="0.9601276" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40050805" sideWeight="0.9601276" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07042254" sideWeight="0.9970443" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09859155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -453,11 +670,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/signup.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="544" selection-end="544" vertical-scroll-proportion="-10.461538" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Entity/Profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="177" column="5" selection-start="3015" selection-end="3015" vertical-scroll-proportion="-29.538462" />
@@ -488,13 +700,6 @@
         <state line="40" column="5" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.47826087" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="26" selection-start="0" selection-end="2411" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/cache/dev/assetic/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -514,35 +719,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery.mobile-1.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="59" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.mobile-1.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="1" selection-start="5308" selection-end="5308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/Home/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="652" selection-end="652" vertical-scroll-proportion="0.84842885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="390" selection-end="390" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Drivrrr/ScanBundle/Resources/views/MapBox/mapboxhome.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.029565217">
+        <state line="25" column="40" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.6857671">
           <folding />
         </state>
       </provider>
