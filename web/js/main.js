@@ -20,8 +20,6 @@ $(document).ready(function() {
             }
         });
 
-
-
     });
     $("#txtLocation").on("input", function(e) {
         var location = $(this).val();
