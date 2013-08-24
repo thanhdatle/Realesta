@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <script src="http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"></script>
     <script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
-    {#<script src="{{ asset('js/jquery.mobile-1.3.1.min.js') }}"></script>#}
+    <script src="{{ asset('js/jquery.mobile-1.3.1.min.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe9ftqbsTOChqaoGsWOBb-G06ydFRDqE&v=3.exp&sensor=false&libraries=places"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
-
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-
-
+    <link rel="stylesheet" href="{{ asset('css/colorbox.css') }}">
     <!--[if lte IE 8]>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
-
     <![endif]-->
+    <style>
+        body { margin:0; padding:0; }
+        #map {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 150px;
+            left: 0px;
+            z-index: 0;
+        }
+        .searchbox {
+            min-height: 40px !important;
+        }
+        .input-append {
+            border: 1px solid #ccc;
+            background-color: #e3e3e3;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 40px !important;
+        }
+    </style>
+
+    <style>
+            /*css for mapbox*/
+        body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+        a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+        h2{font-size:13px; margin:15px 0 0 0;}
+    </style>
 </head>
-
 <body>
-
-<div class="container" >
-
-    <div class="row-fluid">
-        {#Top menu#}
-        <header>
-            <div class="span3 offset4" style="margin-bottom: 10px;">
-                <h3 style="margin-left: 40px;"> Logo Realesta</h3>
-            </div>
-        </header>
-
-
-        <div class="span8 offset3">
-            <form action="return false;" style="display:inline;" method="get">
-                <input class="my-abt-search-box" id="txtLocation" name="txtLocation" size="40" type="text" placeholder="Search location "/>
-                <input class="abt-search-btn" id="searchButton" value="Search" type="submit"/>
-            </form>
-
-            <ul id="suggestions" data-role="listview" data-inset="true" data-filter="false" data-filter-reveal="true" data-theme="h">
-                <li data-icon="false"><a id="current_location">Get current location...</a></li>
-            </ul>
+<p><a id="iframe" class='iframe' href="http://escapeflight.com" style="display:none;">Outside Webpage (Iframe)</a></p>
+<div data-theme="h" data-role="page" class="{% block pagecolor %}pink{% endblock %}" id="mapboxhome">
+    <form action="return false;" class="form-inline" id="searchform">
+        <div class="input-append">
+            <input class="input input-xxlarge" name="txtLocation" id="txtLocation" type="text" placeholder="Search....." style="height: 35px;">
+            <button class="btn btn-large" id="searchButton" type="button">Search</button>
         </div>
+    </form>
+    <table border="0px" cellpadding="0px" cellspacing="0px" class="listview">
+        <tr>
+            <td colspan="4">
+                <ul id="suggestions" data-role="listview" data-inset="true" data-filter="false" data-filter-reveal="true" data-theme="h">
+                    <li data-icon="false"><a id="current_location">Get current location...</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <div id="geocode-error"></div>
+    <div id='map'></div>
 
-        <div class="span12" >
-            <div id="maparea">
-            <!--Body content-->
-                <div id=map></div>
-            </div>
-        </div>
-    </div>
 </div>
-
-
 <script type='text/javascript'>
     var map = L.mapbox.map('map', 'myticmoon.map-1hexx4xe');
     map.setView([1.352, 103.819], 11);
+
+    //    L.mapbox.markerLayer({
+    //        // this feature is in the GeoJSON format: see geojson.org
+    //        // for the full specification
+    //        type: 'Feature',
+    //        geometry: {
+    //            type: 'Point',
+    //            // coordinates here are in longitude, latitude order because
+    //            // x, y is the standard for GeoJSON and many formats
+    //            coordinates: [103.819, 1.352 ]
+    //        },
+    //        properties: {
+    //            title: 'A Single Marker',
+    //            description: 'Just one of me',
+    //            radius: '200',
+    //            // one can customize markers by adding simplestyle properties
+    //            // http://mapbox.com/developers/simplestyle/
+    //            'marker-size': 'large',
+    //            'marker-color': '#f0a'
+    //        }
+    //    }).addTo(map);
+
+    var marker1 = L.circle([1.352, 103.819], 200, {
+        color: '#red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(map);
+
+    marker1.on("click", function() {
+        $("#iframe").trigger('click');
+    });
+
+    var marker2 = L.circle([1.354, 103.829], 200, {
+        color: '#red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(map);
+
+    var marker3 = L.circle([1.357, 103.823], 200, {
+        color: '#red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(map);
+
+
+
+    $(document).ready(function(){
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+    });
 </script>
 </body>
 </html>
