@@ -1,50 +1,61 @@
-#suggestions{
-    z-index: 1 !important;
+.abt-search-btn {
+    background: none repeat scroll 0 0 #359BED;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.my-abt-search-box {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 0 0 0 0;
+    border: 0 none;
+    padding:10px;
+    width: 350px;
+
+}
+
+#maparea {
 }
 
 #map {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 0 !important;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 70px;
+    z-index: 0;
 }
 
-#header {
-    display: none;
+#suggestions{
+    z-index: 1 !important;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    width: 460px;
+    padding: 5px;
+    /*border: 1px solid;*/
 }
 
-.overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:1000;
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-.container-fluid {
-    overflow: hidden;
+ul li{
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.nopadding {
-    padding: 0!important;
+ul li a {
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.controlbar {
-    margin-bottom: 0px;
-}
+ul li a:hover {
+    text-decoration:none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    border-color: #2380dd #2179d5 #1a60aa;
 
-.navbarcustom {
-    min-height: 100px;
-}
-
-.searchbox {
-    min-height: 40px !important;
-}
-
-.searchboxicon {
-    height: 30px !important;
-    width: 30px !important
 }

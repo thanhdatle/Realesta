@@ -55,7 +55,7 @@ function suggest(address) {
         if (status != google.maps.places.PlacesServiceStatus.OK) {
             return;
         } else {
-            var html = '<li data-icon="false"><a id="current_location">Get current location...</a></li>';
+            var html = '<li data-icon="false"><a id="current_lopcation">Get current location...</a></li>';
             $('#suggestions').html('');
 
             for( var i = 0; i < predictions.length; i++ ) {
@@ -69,7 +69,8 @@ function suggest(address) {
             }
 
             $('#suggestions').append(html);
-            $('#suggestions').listview( "refresh" );
+            $('#suggestions').listview();
+            listview( "refresh" );
             $('#suggestions').trigger( "updatelayout");
 
             // Bind click event to each location result
