@@ -69,8 +69,8 @@ function suggest(address) {
             }
 
             $('#suggestions').append(html);
-            $('#suggestions').listview();
-            listview( "refresh" );
+            $('#suggestions').listview('refresh');
+            //listview( "refresh" );
             $('#suggestions').trigger( "updatelayout");
 
             // Bind click event to each location result
