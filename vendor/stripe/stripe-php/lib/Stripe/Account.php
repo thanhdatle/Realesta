@@ -1,5 +1,5 @@
 <?php
-namespace StripePhp\Stripe;
+
 class Stripe_Account extends Stripe_SingletonApiResource
 {
   public static function constructFrom($values, $apiKey=null)

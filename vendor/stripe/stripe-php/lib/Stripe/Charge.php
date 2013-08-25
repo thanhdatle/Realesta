@@ -1,5 +1,4 @@
 <?php
-namespace StripePhp\Stripe;
 
 class Stripe_Charge extends Stripe_ApiResource
 {

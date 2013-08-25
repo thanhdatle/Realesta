@@ -1,5 +1,5 @@
 <?php
-namespace StripePhp\Stripe;
+
 class Stripe_Transfer extends Stripe_ApiResource
 {
   public static function constructFrom($values, $apiKey=null)

@@ -1,5 +1,5 @@
 <?php
-namespace StripePhp\Stripe;
+
 class Stripe_CardError extends Stripe_Error
 {
   public function __construct($message, $param, $code, $http_status=null, $http_body=null, $json_body=null)

@@ -1,20 +1,12 @@
 <?php
 
-namespace StripePhp\Stripe;
-
-use StripePhp\Stripe\Stripe_Charge;
-use StripePhp\Stripe\Util\Stripe_Util_Set;
-use StripePhp\Stripe\Stripe_Customer;
-use StripePhp\Stripe\Stripe_Account;
-use StripePhp\Stripe\Stripe_Util;
-
-class Stripe_Object implements \ArrayAccess
+class Stripe_Object implements ArrayAccess
 {
   public static $_permanentAttributes;
 
   public static function init()
   {
-      self::$_permanentAttributes = new Stripe_Util_Set(array('_apiKey', 'id'));
+    self::$_permanentAttributes = new Stripe_Util_Set(array('_apiKey', 'id'));
   }
 
   protected $_apiKey;
@@ -46,6 +38,12 @@ class Stripe_Object implements \ArrayAccess
   // Standard accessor magic methods
   public function __set($k, $v)
   {
+    if ($v === ""){
+      throw new InvalidArgumentException(
+        'You cannot set \''.$k.'\'to an empty string. '
+        .'We interpret empty strings as NULL in requests. '
+        .'You may set obj->'.$k.' = NULL to delete the property');
+    }
     // TODO: may want to clear from $_transientValues.  (Won't be user-visible.)
     $this->_values[$k] = $v;
     if (!self::$_permanentAttributes->includes($k))
@@ -97,65 +95,17 @@ class Stripe_Object implements \ArrayAccess
     return array_key_exists($k, $this->_values) ? $this->_values[$k] : null;
   }
 
+  public function keys()
+  {
+    return array_keys($this->_values);
+  }
+
   // This unfortunately needs to be public to be used in Util.php
   public static function scopedConstructFrom($class, $values, $apiKey=null)
   {
-      $obj = null;
-      switch($class){
-          case 'Stripe_Charge':
-              $obj = new Stripe_Charge(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Object':
-              $obj = new Stripe_Object(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Customer':
-              $obj = new Stripe_Customer(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Account':
-              $obj = new Stripe_Account(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Coupon':
-              $obj = new Stripe_Coupon(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Event':
-              $obj = new Stripe_Event(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Invoice':
-              $obj = new Stripe_Invoice(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_InvoiceItem':
-              $obj = new Stripe_InvoiceItem(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_List':
-              $obj = new Stripe_List(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Plan':
-              $obj = new Stripe_Plan(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Recipient':
-              $obj = new Stripe_Recipient(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Token':
-              $obj = new Stripe_Token(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Transfer':
-              $obj = new Stripe_Transfer(isset($values['id']) ? $values['id'] : null, $apiKey);
-              break;
-          case 'Stripe_Util':
-              //TODO - find a way to handle instantiation of abstract class stripe_util, looks like it will never instantiate a stripe_util object
-              //$obj = new Stripe_Util(isset($values['id']) ? $values['id'] : null, $apiKey);
-              //$obj = new $class(isset($values['id']) ? $values['id'] : null, $apiKey);
-              echo('Please refer to vendor/stripe/Object.php line 148');
-              break;
-
-
-
-          default:
-              echo('Class not found in Stripe\Object.php');
-              break;
-      }
-      $obj->refreshFrom($values, $apiKey);
-      return $obj;
+    $obj = new $class(isset($values['id']) ? $values['id'] : null, $apiKey);
+    $obj->refreshFrom($values, $apiKey);
+    return $obj;
   }
 
   public static function constructFrom($values, $apiKey=null)
@@ -188,6 +138,19 @@ class Stripe_Object implements \ArrayAccess
       $this->_transientValues->discard($k);
       $this->_unsavedValues->discard($k);
     }
+  }
+
+  // Pretend to have late static bindings, even in PHP 5.2
+  protected function _lsb($method)
+  {
+    $class = get_class($this);
+    $args = array_slice(func_get_args(), 1);
+    return call_user_func_array(array($class, $method), $args);
+  }
+  protected static function _scopedLsb($class, $method)
+  {
+    $args = array_slice(func_get_args(), 2);
+    return call_user_func_array(array($class, $method), $args);
   }
 
   public function __toJSON()
