@@ -1,19 +1,43 @@
 .abt-search-btn {
-    background: none repeat scroll 0 0 #359BED;
-    border: 0 none;
-    border-radius: 0 0 0 0;
-    color: #FFFFFF;
-    font-weight: 700;
-    padding: 10px 20px;
+    background-color:#ffe300;
+    border:0;
+    border-right:1px solid #f9d400;
+    width:60px;
+    font:700 14px futura-pt,Arial Narrow,Helvetica Neue,Arial,Helvetica,sans-serif;
+    line-height:50px;
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#393131;
+    margin:0 0 0 1px;
+    -webkit-transition:background .8s cubic-bezier(1,0,0,1);
+    -moz-transition:background .8s cubic-bezier(1,0,0,1);
+    -o-transition:background .8s cubic-bezier(1,0,0,1);
+    transition:background .8s cubic-bezier(1,0,0,1);
 }
 
-.my-abt-search-box {
+.abt-search-btn:hover{
+    background-color:#ffea00;
+    background-position:60px 0;
+
+}
+
+
+.search-area {
+    position: relative;
+    border: 0 none;
+    width: auto;
+    height: 51px;
+}
+
+.abt-search-box {
+    position: relative;
     background: none repeat scroll 0 0 #EEEEEE;
     border-radius: 0 0 0 0;
     border: 0 none;
-    padding:10px;
+    height: 51px;
     width: 350px;
-
+    z-index: 10001;
 }
 
 #maparea {
@@ -35,6 +59,7 @@
     width: 460px;
     padding: 5px;
     /*border: 1px solid;*/
+    
 }
 
 ul {
