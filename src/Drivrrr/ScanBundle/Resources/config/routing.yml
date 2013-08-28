@@ -7,6 +7,10 @@ mapbox_welcome:
     pattern:  /
     defaults: { _controller: ScanBundle:MapBox:mapboxWelcome}
 
+mapbox_detail:
+    pattern:  /mapboxdetail
+    defaults: { _controller: ScanBundle:MapBox:mapboxDetail}
+
 scan_welcome:
     pattern:  /welcome
     defaults: { _controller: ScanBundle:Home:welcome }

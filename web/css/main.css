@@ -19,7 +19,6 @@
 .abt-search-btn:hover{
     background-color:#ffea00;
     background-position:60px 0;
-
 }
 
 
@@ -38,19 +37,13 @@
     height: 51px;
     width: 350px;
     z-index: 10001;
+    font:700 20px futura-pt,Arial Narrow,Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-weight: normal;
 }
 
 #maparea {
 }
 
-#map {
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 70px;
-    z-index: 0;
-}
 
 #suggestions{
     z-index: 1 !important;

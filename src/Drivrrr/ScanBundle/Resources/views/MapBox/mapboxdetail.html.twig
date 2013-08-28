@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Realesta - A powerful housing system</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href=" {{ asset('css/main.css') }}">
+    <link rel="stylesheet" href=" {{ asset('css/mystyle.css') }}">
+    <link rel="stylesheet" href=" {{ asset('css/escape-icons.css') }} ">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/static/img/favicon.png" >
+
+    <script type="text/javascript" src="//use.typekit.net/dzw0ehp.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+    <script type="text/javascript">  var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-38903245-1']); _gaq.push(['_trackPageview']);  (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();  </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="{{ asset('js/jquery.spritely-0.6.js') }}"></script>
+    {#<script type="text/javascript" src="{{ asset('js/jquery.cookie.js') }}"></script>#}
+    {#<script type="text/javascript" src="{{ asset('js/analytics.js') }}"></script>#}
+    {#<script type="text/javascript" src="{{ asset('js/searchbar.js') }}"></script>#}
+    {#<script type="text/javascript" src="{{ asset('js/jquery.history.js') }}"></script>#}
+    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/hero.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
+    {#<script src="{{ asset('js/jquery.mobile-1.3.1.min.js') }}"></script>#}
+    <script type="text/javascript">
+      $("#txtLocation").on("input", function(e) {
+          alert('input');
+      });
+    </script>
+
+    <script src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/colorbox.css') }}">
+    <script>
+        $(document).ready(function(){
+            $(".house-info").colorbox({iframe:true, width:"80%", height:"90%"});
+        });
+    </script>
+
+  </head>
+
+
+  <body>
+  	<div id="wrapper">
+		<header>
+      <div id="header-overlay"></div>
+      <form id="header-bar" method="get" action="/">
+        <div class="container">
+        <h1><a href="/">Realesta</a></h1>
+        <div id="airport" class="dropdown alpha-one">
+          <h2>Search at</h2>
+          <div class="display">
+              <div class="flip">
+                <div class="flip-content">S</div>
+              </div>
+              <div class="flip">
+                <div class="flip-content">I</div>
+              </div>
+              <div class="flip">
+                <div class="flip-content">N</div>
+              </div>
+          </div>
+         
+          <ul>
+          
+            <li>
+            <input type="radio" name="a" id="airport-LON" value="LON" />
+            <label for="airport-LON">London</label>
+            <span class="icon-check"></span>
+            </li>
+          
+            <li>
+            <input type="radio" name="a" id="airport-LHR" value="LHR"  />
+            <label for="airport-LHR">Tokyo</label>
+            <span class="icon-check"></span>
+            </li>
+          
+            <li>
+            <input type="radio" name="a" id="airport-LGW" value="LGW"  />
+            <label for="airport-LGW">HCM City</label>
+            <span class="icon-check"></span>
+            </li>
+          
+            <li class="dropdown-link">
+              <a href="#other" id="show-sentence-2">Other city</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div id="dates" style="width:auto;">
+        
+              <h2>Location</h2>
+              <input class="abt-search-box" name="txtLocation" id="txtLocation" type="text" placeholder="Location...">
+              
+              {#<ul id="suggestions" data-role="listview" data-inset="true" data-filter="false" data-filter-reveal="true" data-theme="h">#}
+                  {#<li data-icon="false"><a id="current_location">Get current location...</a></li>#}
+              {#</ul>#}
+
+              <button class="abt-search-btn">Go</button>
+              
+        </div>
+      </div>
+      </form>
+
+		</header>
+		
+
+<div id="destination">
+	<div class="close-btn"><a href="/" data-analytics="DetailLink, back_home">Check our <strong>top destinations</strong></a></div>
+	<div id="detail-container">
+		<script type="text/javascript" src="/static/js/destination.js"></script>
+		<script type="text/javascript" src="/static/js/passengers.js"></script>
+		
+		<div id="highlighted-flight">
+			
+				
+
+
+<!--FLIGHT-->
+<div class="flight">
+	<div class="price">&pound;<strong>305</strong></div>
+
+	<div class="in">
+		<div class="departure">
+			Friday 30, 8:10PM <strong>Heathrow (LHR)</strong>
+		</div>
+		<div class="duration">
+			<strong>1h 10m</strong>
+		</div>
+	</div>
+	
+	<div class="out">
+		<div class="departure">
+			6:15PM <strong>Charles de<br>Gaulle (CDG)</strong>
+		</div>
+		<div class="duration">
+			<strong>1h 15m</strong>
+		</div>
+	</div>
+
+    <div class="passengers">
+        <div class="minus"> </div>
+        <div class="people">
+            <div class="people-number">
+                <p></p>
+            </div>
+        </div>
+        <div class="plus"> </div>
+    </div>
+	
+	<div class="check">
+		<a href="/redirection/105/997916/?a=LON&amp;w=T&amp;p=W&amp;i1=2&amp;i2=1" target="_blank" data-analytics="CheckFlightLinks, link_highlighted, Moret">Check flights<span></a>
+	</div>
+	
+	<div class="clearfix"></div>
+</div>
+<!--end FLIGHT-->
+
+			
+		</div>
+		
+	
+		
+		<div id="dest-title">
+			<h1>Moret <strong>France</strong></h1>
+			<p>This weekend <strong>August 30<em>th</em> - 1<em>st</em></strong></p>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="weather-bar">
+			<ul class="col-3">
+				
+					<li>
+						<span class="day"><strong>Friday</strong>August 30</span>
+					
+						<span class="weather"><span class="icon-partlycloudy"></span> <strong class="hot">25°</strong><em class="separator">/</em><em class="cold">11°</em></span>
+						<span class="vert-bar"></span>
+					
+					</li>
+				
+					<li>
+						<span class="day"><strong>Saturday</strong>August 31</span>
+					
+						<span class="weather"><span class="icon-partlycloudy"></span> <strong class="hot">24°</strong><em class="separator">/</em><em class="cold">10°</em></span>
+						<span class="vert-bar"></span>
+					
+					</li>
+				
+					<li>
+						<span class="day"><strong>Sunday</strong>September 01</span>
+					
+						<span class="weather"><span class="icon-clear"></span> <strong class="hot">20°</strong><em class="separator">/</em><em class="cold">8°</em></span>
+						<span class="vert-bar"></span>
+					
+					</li>
+				
+				
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		<div id="destination-preview" class="hero" style="width:100%; height:100%;">
+			<img style="width:100%; height:100%;" src="img/17.jpg" alt="" />
+		</div>
+		
+		<div class="flights">
+			
+				<div id="flights-wrapper">
+					
+						
+
+
+<!--FLIGHT-->
+<div class="item ">
+	<div class="price">&pound;<strong>305</strong> <span>total / person</span></div>
+
+	<!--DEPARTURE-->
+	<div class="info-departure">
+		<div class="in">
+			Friday 30, 8:10PM <strong>Heathrow (LHR)</strong>
+		</div>
+		<div class="duration">
+			<strong>1h 10m</strong>
+		</div>
+		<div class="out">
+			10:20PM <em class="late"></em><strong>Charles de<br>Gaulle (CDG)</strong>
+		</div>
+	
+		<div class="info" data-tooltip>
+			
+			<a href="#flight-transit"  data-smoothscroll="#flight-transit">i</a>
+			<div class="info-popup tooltip">
+				<h2>Transit to Moret</h2>
+				<div class="content">
+					<p>These transit times are estimates, so you can't hold it against us if your journey takes a bit longer</p>
+					<p><a href="#flight-transit"  data-smoothscroll="#flight-transit" class="white-btn">See transit instructions</a></p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="place">
+			around 11:55PM <em class="late"></em><strong>Moret</strong>
+		</div>
+	
+		<div class="clearfix"></div>
+	</div>
+
+	<!--DEPARTURE-->
+	<div class="info-arrival">
+	
+		<div class="place">
+			Sunday 01 <strong>Moret</strong>
+		</div>
+		<div class="info" data-tooltip>
+			
+			<a href="#flight-transit"  data-smoothscroll="#flight-transit">i</a>
+			<div class="info-popup tooltip">
+				<h2>Transit to Moret</h2>
+				<div class="content">
+					<p>These transit times are estimates, so you can't hold it against us if your journey takes a bit longer</p>
+					<p><a href="#flight-transit" data-smoothscroll="#flight-transit" class="white-btn" data-analytics="DetailPage, Flight_info_button, Moret">See transit instructions</a></p>
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="in">
+			6:15PM <strong>Charles de<br>Gaulle (CDG)</strong>
+		</div>
+		<div class="duration">
+			<strong>1h 15m</strong>
+		</div>
+		<div class="out">
+			6:30PM <em class="late"></em><strong>Heathrow (LHR)</strong>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+    <div class="passengers">
+        <div class="plus"> </div>
+        <div class="people">
+            <div class="people-number">
+                <p></p>
+            </div>
+        </div>
+        <div class="minus"> </div>
+    </div>
+	<div class="check">
+		<a href="/redirection/105/997916/?a=LON&amp;w=T&amp;p=W&amp;i1=2&amp;i2=1" target="_blank" data-analytics="CheckFlightLinks, link_1, Moret">Check flights<span>on <em>tripsta.co.uk</em></span></a>
+	</div>
+	
+	<div class="clearfix"></div>
+</div>
+<!--end FLIGHT-->
+
+					
+						
+	
+	<div class="clearfix"></div>
+</div>
+<!--end FLIGHT-->
+
+	<!--FEEDBACK-->
+	<div id="getsat-widget-4829"></div>
+	<script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
+	<script type="text/javascript">if (typeof GSFN !== "undefined"){ GSFN.loadWidget(4829,{"containerId":"getsat-widget-4829"});}</script>
+	<div id="highlight-wrapper"></div>
+	<!--end FEEDBACK-->
+  </body>
+
+    <footer style="margin-top:30px;">
+    <div class="container">
+      <p id="weather-source">Realesta data by <a href="http://www.wunderground.com/" target="_blank" data-analytics="Outbound Links, Wunderground">wunderground.com</a></p>
+      <p id="follow-us">Follow <strong>Realesta</strong> updates on <a href="https://twitter.com/escapeflight" class="white-btn" target="_blank" data-analytics="Outbound Links, Twitter">Twitter</a></p>
+      
+      {#<div id="face-like" data-analytics="SocialMediaClicks, FacebookLike">#}
+        {#<div id="fb-root"></div>#}
+        {#<script>(function(d, s, id) {#}
+          {#var js, fjs = d.getElementsByTagName(s)[0];#}
+          {#if (d.getElementById(id)) return;#}
+          {#js = d.createElement(s); js.id = id;#}
+          {#js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=134446390057069";#}
+          {#fjs.parentNode.insertBefore(js, fjs);#}
+        {#}(document, 'script', 'facebook-jssdk'));</script>#}
+        
+        {#<div class="fb-like" data-href="http://www.escapeflight.com" data-send="false" data-width="980" data-show-faces="true"></div>#}
+      {#</div>#}
+      
+    </div>
+    
+    <div id="copy">
+      <div class="container">
+        <div id="copy-right">
+          <a href="/terms/">Terms and Conditions</a>
+          <span class="separator">|</span>
+          <a href="/privacy/">Privacy</a>
+          <span class="separator">|</span>
+          {#Share <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//escapeflight.com/" id="footer-fb" target="_blank" data-sharing-popup="600,240" data-analytics="SocialMediaClicks, FacebookShare"><strong>on Facebook</strong></a> <a href="https://plus.google.com/share?url=http%3A//escapeflight.com/" id="footer-go" target="_blank" data-sharing-popup="600,240" data-analytics="SocialMediaClicks, TwitterShare"><strong>on Google+</strong></a> <a href="https://twitter.com/intent/tweet?hashtags=escapeflight&text=Need%20to%20get%20out%20of%20the%20city%3F%20Escape%20Flight%3A%20the%20new%20online%20service%20that%20only%20flies%20this%20weekend&url=http%3A//escapeflight.com/"id="footer-tw" target="_blank" data-sharing-popup="600,240" data-analytics="SocialMediaClicks, GoogleShare"><strong>on Twitter</strong></a>#}
+        </div>
+        
+        <div id="copyright">&copy; 2013 Realesta <span id="rights">We rock team, NTU. All rights reserved.</span></div>
+        
+        <div class="clear"></div>
+      </div>
+    </div>
+    </footer>
+</html>

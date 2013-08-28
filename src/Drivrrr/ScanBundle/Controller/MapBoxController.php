@@ -22,4 +22,8 @@ class MapBoxController extends Controller{
     {
         return $this->render('ScanBundle:MapBox:mapboxwelcome.html.twig');
     }
+
+    public function mapboxDetailAction(){
+        return $this->render('ScanBundle:MapBox:mapboxdetail.html.twig');
+    }
 }
