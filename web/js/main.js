@@ -15,7 +15,7 @@ $(document).ready(function() {
             success: function(data){
                 lat = data.results[0].geometry.location.lat;
                 long = data.results[0].geometry.location.lng;
-                map.setView([lat, long], 15);
+                map.setView([lat, long], 14);
                 e.preventDefault();
             }
         });
