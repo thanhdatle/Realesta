@@ -17,7 +17,8 @@ class MapBoxController extends Controller{
     {
         $request = $this->get('request');
         $location = '';
-        if ($request->getMethod() == 'GET') {
+        if ($request->getMethod() == 'GET')
+        {
             $location = $request->get('location');
         }
         return $this->render('ScanBundle:MapBox:mapboxhome.html.twig',['location'=>$location]);
