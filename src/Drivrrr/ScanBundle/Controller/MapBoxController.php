@@ -15,7 +15,12 @@ use Symfony\Component\HttpFoundation\Response;
 class MapBoxController extends Controller{
     public function mapboxHomeAction()
     {
-        return $this->render('ScanBundle:MapBox:mapboxhome.html.twig');
+        $request = $this->get('request');
+        $location = '';
+        if ($request->getMethod() == 'GET') {
+            $location = $request->get('location');
+        }
+        return $this->render('ScanBundle:MapBox:mapboxhome.html.twig',['location'=>$location]);
     }
 
     public function mapboxWelcomeAction()

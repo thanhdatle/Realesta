@@ -43,6 +43,19 @@
     <script>
         $(document).ready(function(){
             $(".house-info").colorbox({iframe:true, width:"80%", height:"90%"});
+
+            $("#searchButton").on("click",function(e){
+                e.preventDefault();
+                alert("abc");
+                locationName = $("#txtLocation").val();
+                //locationName = locationName.replace(" ","+");
+                window.location = "{{ url('mapbox_home') }}?location="+locationName;
+                //e.preventDefault();
+//                    linkLocation = this.href;
+                //linkLocation = "http://www.google.com";
+                //$(document).fadeOut(1000, redirectPage);
+            });
+
         });
     </script>
 
@@ -103,7 +116,7 @@
                   {#<li data-icon="false"><a id="current_location">Get current location...</a></li>#}
               {#</ul>#}
 
-              <button class="abt-search-btn">Go</button>
+              <button class="abt-search-btn" id="searchButton">Go</button>
               
         </div>
       </div>
@@ -199,7 +212,7 @@
       <div class="display">
         
         <div class="large">
-          <a href="http://escapeflight.com/barcelona/?a=LON&w=T&p=W&i1=2&i2=1" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_1, Leiden">
+          <a href="{{path('mapbox_detail')}}" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_1, Leiden">
           <img src="img/5.jpg" class="hero-img hero-replace" />
           <div class="info">
             <h1 class="city">Binjai Crest</h1>
@@ -216,7 +229,7 @@
         <div class="small-group">
                     <div class="small money">
                       
-                      <a href="http://escapeflight.com/barcelona/?a=LON&w=T&p=W&i1=2&i2=1" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_2, Scheveningen">
+                      <a href="{{path('mapbox_detail')}}" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_2, Scheveningen">
                         <img src="img/6.jpg" class="hero-img" />
                         <div class="info">
                           <h1 class="city">Michael's @ Chestnut</h1>
@@ -234,7 +247,7 @@
 
                     <div class="small money">
                       
-                      <a href="http://escapeflight.com/barcelona/?a=LON&w=T&p=W&i1=2&i2=1" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_3, Ghent">
+                      <a href="{{path('mapbox_detail')}}" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_3, Ghent">
                         <img src="img/7.jpg" class="hero-img" />
                         <div class="info">
                           <h1 class="city">Jln Kg Chantek</h1>
@@ -252,7 +265,7 @@
 
                     <div class="small money">
                       
-                      <a href="http://escapeflight.com/barcelona/?a=LON&w=T&p=W&i1=2&i2=1" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_4, Bruges">
+                      <a href="{{path('mapbox_detail')}}" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_4, Bruges">
                         <img src="img/8.jpg" class="hero-img" />
                         <div class="info">
                           <h1 class="city">Mandarin Park</h1>
@@ -270,7 +283,7 @@
 
                     <div class="small money">
                       
-                      <a href="http://escapeflight.com/barcelona/?a=LON&w=T&p=W&i1=2&i2=1" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_5, Lake Genval">
+                      <a href="{{path('mapbox_detail')}}" class="house-info" data-popup data-analytics="DetailLink, Home_Cheapest_5, Lake Genval">
                         <img src="img/9.jpg" class="hero-img" />
                         <div class="info">
                           <h1 class="city">GCB - Jalan Kampong</h1>

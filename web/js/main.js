@@ -7,6 +7,7 @@
  */
 $(document).ready(function() {
     $("#searchButton").click( function(e){
+        e.preventDefault();
         var location = $('#txtLocation').val();
         location = location.replace(" ","+");
         var long = '';
@@ -19,7 +20,7 @@ $(document).ready(function() {
                 e.preventDefault();
             }
         });
-
+        return;
     });
     $("#txtLocation").on("input", function(e) {
         var location = $(this).val();
