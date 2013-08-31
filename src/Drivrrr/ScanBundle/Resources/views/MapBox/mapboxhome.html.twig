@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href=" {{ asset('css/main.css') }}">
     <link rel="stylesheet" href=" {{ asset('css/mystyle.css') }}">
+
+    <link rel="stylesheet" href=" {{ asset('css/jquery-ui-1.10.3.custom.min.css') }}">
     <link rel="stylesheet" href=" {{ asset('css/escape-icons.css') }} ">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/static/img/favicon.png" >
@@ -22,6 +24,8 @@
     <script type="text/javascript" src="{{ asset('js/hero.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+
     {#<script src="{{ asset('js/jquery.mobile-1.3.1.min.js') }}"></script>#}
     <script type="text/javascript">
       $("#txtLocation").on("input", function(e) {
@@ -87,6 +91,13 @@
 
 </head>
 <body>
+<div id="dialog" title="Scape WareHouse" stype="display:none;width:500px;height:200px;">
+    {#<p>Scape WareHouse</p>#}
+    Price: 200$ /day </br>
+    <div style="width:250px;height:120px;">
+    <img src="{{ asset('img/blueprint.png') }}" style="width:100%;height:100%">
+    </div>
+</div>
 <p><a id="iframe" class='iframe' href="{{path('mapbox_detail')}}" style="display:none;">Outside Webpage (Iframe)</a></p>
 
 <div id="wrapper">
@@ -95,7 +106,7 @@
       <form id="header-bar" method="get" action="/">
         <div class="container">
         <h1>
-            <img class="logo" src="img/logo2.png">
+            <img class="logo" src="img/newlogo.png">
         </h1>
         <div id="airport" class="dropdown alpha-one">
           <h2>Search at</h2>
@@ -186,6 +197,10 @@
         $("#iframe").trigger('click');
     });
 
+    marker1.on("mouseover", function() {
+        $( "#dialog" ).dialog();
+    });
+
     var image1= L.imageOverlay('{{ asset('img/house2.png') }}', [[1.305750, 103.811836], [1.301750, 103.817836]], {opacity: 1});
     image1.addTo(map);
     image1.bringToBack();
@@ -198,6 +213,9 @@
 
     marker2.on("click", function() {
         $("#iframe").trigger('click');
+    });
+    marker2.on("mouseover", function() {
+        $( "#dialog" ).dialog();
     });
 
     var image2= L.imageOverlay('{{ asset('img/house3.png') }}', [[1.318333, 103.79832], [1.322333, 103.80332]], {opacity: 1});
@@ -215,6 +233,10 @@
         $("#iframe").trigger('click');
     });
 
+    marker3.on("mouseover", function() {
+        $( "#dialog" ).dialog();
+    });
+
     var image3= L.imageOverlay('{{ asset('img/house7.png') }}', [[1.313333, 103.78232], [1.317333, 103.78732]], {opacity: 1});
     image3.addTo(map);
     image3.bringToBack();
@@ -227,6 +249,10 @@
 
     marker4.on("click", function() {
         $("#iframe").trigger('click');
+    });
+
+    marker4.on("mouseover", function() {
+        $( "#dialog" ).dialog();
     });
 
     var image4= L.imageOverlay('{{ asset('img/house5.png') }}', [[1.330333, 103.79232], [1.334333, 103.79732]], {opacity: 1});
@@ -243,12 +269,17 @@
         $("#iframe").trigger('click');
     });
 
+    marker5.on("mouseover", function() {
+        $( "#dialog" ).dialog();
+    });
+
     var image5= L.imageOverlay('{{ asset('img/house6.png') }}', [[1.308333, 103.81732], [1.312333, 103.82232]], {opacity: 1});
     image5.addTo(map);
     image5.bringToBack();
 
     $(document).ready(function(){
         $(".iframe").colorbox({iframe:true, width:"80%", height:"90%"});
+        $("#dialog").hide();
     });
 </script>
 </body>

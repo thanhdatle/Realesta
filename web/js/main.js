@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#searchButton").click( function(e){
         e.preventDefault();
         var location = $('#txtLocation').val();
-        location = location.replace(" ","+");
+        //location = location.replace(" ","+");
         var long = '';
         var lat = '';
         $.ajax({ url:'http://maps.googleapis.com/maps/api/geocode/json?address='+location+'&sensor=true',
